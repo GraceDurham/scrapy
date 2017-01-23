@@ -31,11 +31,11 @@ scrapy startproject tutorial
 
 ### Create a spider
 
-Spiders are classes that you define and that Scrapy uses to scrape information from a website (or a group of websites). They must subclass scrapy.Spider and define the initial requests to make, optionally how to follow links in the pages, and how to parse the downloaded page content to extract data.  Here's how to create your own.  In this example its called quotes.
+Spiders are classes that you define and that Scrapy uses to scrape information from a website (or a group of websites). They must subclass scrapy.Spider and define the initial requests to make, optionally how to follow links in the pages, and how to parse the downloaded page content to extract data.  Here's how to create your own.  In this example its called charlotte.
 
 ```
 cd tutorial/tutorial/spiders
-touch quotes_spider.py
+touch charlotte_spider.py
 ```
 
 ### Test the spider.  
@@ -43,13 +43,13 @@ touch quotes_spider.py
 Change dirctory to the top directory scrapy/tutorial and run the spider
 The command tells scrapy to crawl quotes.  
 It looks in the spiders directory (scrapy/tutorial/tutorial/spiders) for a class with 
-a name attribute that matches the name of the spider passed to "scrapy crawl" in this case its "quotes"
+a name attribute that matches the name of the spider passed to "scrapy crawl" in this case its "charlotte"
 
 If you ran 'scrapy crawl bob' it would look for a class with the name attribute set to "bob"
 
 ```
 cd ../../
-scrapy crawl quotes
+scrapy crawl charlotte
 ```
 
 
