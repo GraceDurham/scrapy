@@ -40,7 +40,7 @@ touch charlotte_spider.py
 
 ### Test the spider.  
 
-Change dirctory to the top directory scrapy/tutorial and run the spider
+Change directory to the top directory scrapy/tutorial and run the spider
 The command tells scrapy to crawl charlotte.  
 It looks in the spiders directory (scrapy/tutorial/tutorial/spiders) for a class with 
 a name attribute that matches the name of the spider passed to "scrapy crawl" in this case its "charlotte"
